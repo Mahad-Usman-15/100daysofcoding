@@ -1,8 +1,8 @@
 # To determine wwheter the series is gemotric or not
 # Method1
 def determine_gp(numbers:list):
-    r1=numbers[0]/numbers[1]
-    r2=numbers[1]/numbers[2]
+    r1=numbers[1]/numbers[0]
+    r2=numbers[2]/numbers[1]
     if r1==r2:
         print("The series is geometric")
     else:
@@ -33,6 +33,6 @@ def determine_gp(numbers: list) -> bool:
     return True
 
 
-# Test
+
 result = determine_gp([2, 4, 8, 16, 32])
 print("The series is geometric" if result else "The series is not geometric")
