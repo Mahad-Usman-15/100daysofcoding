@@ -7,7 +7,6 @@ mockuser={
 "password":"impo$$ible1",
 "isAdmin":True
 }
-
 def post_user():
     try:
         response = requests.post("https://pizzabackend-omega.vercel.app/api/create-admin", json=mockuser)
